@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate({MeetGreet, SetTime}) {
       // define association here
-      Band.hasMany(MeetGreet. {
+      Band.hasMany(MeetGreet, {
         foreignKey: 'band_id',
         as: 'meet_greets'
       })
